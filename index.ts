@@ -1,3 +1,3 @@
-import designPattern from "./01-Desing-Patterns/designPattern";
+import strategyPattern from "./01-Strategy-Patterns/strategyPattern";
 console.log("=============Design-Pattern-Example========\n")
-designPattern();
+strategyPattern();
