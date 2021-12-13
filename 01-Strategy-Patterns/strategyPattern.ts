@@ -76,9 +76,7 @@ export default ()=>{
 const context = new Context(new ConcreteStrategyA());
 console.log('Client: Strategy is set dto normal sorting.');
 context.doSomeBusinessLogic();
-
 console.log('');
-
 console.log('Client: Strategy is set to reverse sorting.');
 context.setStrategy(new ConcreteStrategyB());
 context.doSomeBusinessLogic();

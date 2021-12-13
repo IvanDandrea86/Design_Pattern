@@ -3,6 +3,7 @@ import strategyPattern from "./01-Strategy-Patterns/strategyPattern";
 import socialMedia from "./02-Observer-Pattern/socialMedia";
 import decoratorPattern from "./03-Decorator-Pattern/decoratorPattern"
 import decoratorComputer from "./03-Decorator-Pattern/decoratorComputer";
+import decoratorPizza from "./03-Decorator-Pattern/decoratorPizza";
 
 
 console.log("=============Design-Pattern-Example========\n")
@@ -13,5 +14,7 @@ console.log("=============Observer-Pattern-Example 2========\n")
 socialMedia();
 console.log("=============Decorator-Pattern========\n")
 decoratorPattern();
-console.log("=============Decorator-Pattern Example========\n")
+console.log("=============Decorator-Pattern Example 1========\n")
 decoratorComputer();
+console.log("=============Decorator-Pattern Example 2========\n")
+decoratorPizza();

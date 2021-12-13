@@ -78,17 +78,17 @@ export default()=>{
  let ComputerLinux = new ConcreteComputer("Linux");
  let ComputerMac =new ConcreteComputer("MacBookAir");
 
- let LInuxwithPrinter= new Printer(ComputerLinux);
+ let LinuxwithPrinter= new Printer(ComputerLinux);
  let MacwithGPU= new GPU(ComputerMac);
  let MacwithGPUandMonitopr =new Monitor(MacwithGPU);
 console.log(`I am ${MacwithGPU.model} and ${MacwithGPU.print()}`)
 console.log(`I am ${MacwithGPU.model} and ${MacwithGPU.render3D()}`)
 console.log(`I am ${MacwithGPU.model} and ${MacwithGPU.display()}`)
-console.log(`I am ${LInuxwithPrinter.model} and ${LInuxwithPrinter.print()}`)
-console.log(`I am ${LInuxwithPrinter.model} and ${LInuxwithPrinter.render3D()}`)
-console.log(`I am ${LInuxwithPrinter.model} and ${LInuxwithPrinter.display()}`)
+console.log(`I am ${LinuxwithPrinter.model} and ${LinuxwithPrinter.print()}`)
+console.log(`I am ${LinuxwithPrinter.model} and ${LinuxwithPrinter.render3D()}`)
+console.log(`I am ${LinuxwithPrinter.model} and ${LinuxwithPrinter.display()}`)
 console.log(`I am ${MacwithGPUandMonitopr.model} and ${MacwithGPUandMonitopr.print()}`)
-console.log(`I am ${LInuxwithPrinter.model} and ${LInuxwithPrinter.render3D()}`)
-console.log(`I am ${LInuxwithPrinter.model} and ${LInuxwithPrinter.display()}`)
+console.log(`I am ${MacwithGPUandMonitopr.model} and ${MacwithGPUandMonitopr.render3D()}`)
+console.log(`I am ${MacwithGPUandMonitopr.model} and ${MacwithGPUandMonitopr.display()}`)
 }
     
