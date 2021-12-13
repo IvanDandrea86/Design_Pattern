@@ -124,4 +124,5 @@ subject.someBusinessLogic();
 subject.detach(observer2);
 
 subject.someBusinessLogic();
+console.log("====>")
 }

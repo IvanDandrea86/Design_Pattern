@@ -18,6 +18,11 @@ class SocialMedia implements ISubject {
             return observer.name !== element.name
         })
     }
+    getrRandom(){
+        let num= Math.floor(Math.random() * (10 + 1));
+        return num;
+    }
+    //Important!!!!!!
     notify(news:string) {
         this.observers.forEach(observer => {
             observer.update(news);
@@ -31,6 +36,7 @@ class Observer implements IObserver {
     update(news:string) {
         this.feed.push(news)
        console.log(`${this.name} recieved  a news`)
+      
     }
     showFeed() {
         console.log(this.name + ":" + this.feed)
@@ -52,4 +58,5 @@ newsFeed.notify("\n-President say:\"bla bla..\"");
 firstFan.showFeed();
 secondFan.showFeed()
 thirdFan.showFeed();
+
 }
