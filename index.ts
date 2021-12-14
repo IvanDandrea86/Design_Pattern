@@ -7,6 +7,7 @@ import decoratorPizza from "./03-Decorator-Pattern/decoratorPizza";
 import SimpleFactoryMethod from "./04-Factory-Method-Pattern/SimpleFactoryMethod";
 import animalPark from "./04-Factory-Method-Pattern/animalPark";
 import AbstractFactory from "./05-Abstrac-Factory-Pattern/AbstractFactory";
+import FornitureFactory from "./05-Abstrac-Factory-Pattern/FornitureFactory";
 
 
 console.log("\n=============Design-Pattern========\n")
@@ -27,3 +28,5 @@ console.log("\n=============Factory-Method-Pattern Example 1========\n")
 animalPark();
 console.log("\n=============Abstract-Factory-Method-Pattern========\n")
 AbstractFactory();
+console.log("\n=============Abstract-Factory-Method-Pattern Example 2========\n")
+FornitureFactory();
