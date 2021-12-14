@@ -8,6 +8,8 @@ import SimpleFactoryMethod from "./04-Factory-Method-Pattern/SimpleFactoryMethod
 import animalPark from "./04-Factory-Method-Pattern/animalPark";
 import AbstractFactory from "./05-Abstrac-Factory-Pattern/AbstractFactory";
 import FornitureFactory from "./05-Abstrac-Factory-Pattern/FornitureFactory";
+import Singleton from "./06-Singleton-Pattern/Singleton";
+import Command from "./07-Command-Pattern/Command";
 
 
 console.log("\n=============Design-Pattern========\n")
@@ -28,5 +30,9 @@ console.log("\n=============Factory-Method-Pattern Example 1========\n")
 animalPark();
 console.log("\n=============Abstract-Factory-Method-Pattern========\n")
 AbstractFactory();
-console.log("\n=============Abstract-Factory-Method-Pattern Example 2========\n")
+console.log("\n=============Abstract-Factory-Method-Pattern Example 1========\n")
 FornitureFactory();
+console.log("\n=============Singleton-Pattern========\n")
+Singleton();
+console.log("\n=============Commands-Pattern========\n")
+Command();
