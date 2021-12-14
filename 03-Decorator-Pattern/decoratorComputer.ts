@@ -1,5 +1,7 @@
 interface Computer {
-    model:string;
+    brand:string;
+    os:string;
+    getModel():string;
     boot(): string;
     shoutDown():string;
     display():string;
@@ -8,13 +10,21 @@ interface Computer {
 }
 
 class ConcreteComputer implements Computer {
-    model:string;
-    constructor(model:string){
-        this.model=model;
+    brand: string;
+    os:string;
+    constructor(brand:string,os:string){
+        this.brand=brand;
+        this.os=os;
     };
-
+    public getModel():string{
+        return this.brand;
+    }
     public boot(): string {
-        return (`${this.display()} ${this.print()} ${this.render3D()}`)
+       return `${this.display()} ${this.print()} ${this.render3D()}`
+        
+        
+        
+       
     }
     public shoutDown(): string {
         return("Computer shouting down")
@@ -32,15 +42,20 @@ class ConcreteComputer implements Computer {
 
 class ComputerDecorator implements Computer{
      component: Computer;
-   model:string;
+     brand: string;
+    os: string;
     constructor(component: Computer) {
         this.component = component;
-       this.model=component.model;
+       this.brand=component.brand;
+        this.os=component.os;
     }
     
     /**
      * The Decorator delegates all work to the wrapped component.
      */
+     public getModel():string{
+        return this.component.brand;
+    }
     public boot():string {
       return  this.component.boot();
     }  
@@ -60,35 +75,43 @@ class ComputerDecorator implements Computer{
 
  class Monitor extends ComputerDecorator{
     public display(): string {
-        return `I have monitor i can ${super.display()}`;
+        return `I ${super.display()} with Monitor`;
     }
  }
  class Printer extends ComputerDecorator{
     public print(): string {
-        return `I have printer i can ${super.print()}`;
+        return `I ${super.print()} with Printer`;
     }
  }
  class GPU extends ComputerDecorator{
     public render3D(): string {
-        return `I have GPU i can ${super.render3D()}`;
+        return ` I ${super.render3D()} with GPU`;
     }
  }
 
+ function runComputer(component: Computer) {
+    // ...
+
+    console.log(`running: ${component.boot()}`);
+
+    // ...
+}
 export default()=>{
- let ComputerLinux = new ConcreteComputer("Linux");
- let ComputerMac =new ConcreteComputer("MacBookAir");
+ let ComputerLinux = new ConcreteComputer("Asus","Windows");
+ let ComputerMac =new ConcreteComputer("Lenovo","Ubuntu");
 
  let LinuxwithPrinter= new Printer(ComputerLinux);
  let MacwithGPU= new GPU(ComputerMac);
  let MacwithGPUandMonitopr =new Monitor(MacwithGPU);
-console.log(`I am ${MacwithGPU.model} and ${MacwithGPU.print()}`)
-console.log(`I am ${MacwithGPU.model} and ${MacwithGPU.render3D()}`)
-console.log(`I am ${MacwithGPU.model} and ${MacwithGPU.display()}`)
-console.log(`I am ${LinuxwithPrinter.model} and ${LinuxwithPrinter.print()}`)
-console.log(`I am ${LinuxwithPrinter.model} and ${LinuxwithPrinter.render3D()}`)
-console.log(`I am ${LinuxwithPrinter.model} and ${LinuxwithPrinter.display()}`)
-console.log(`I am ${MacwithGPUandMonitopr.model} and ${MacwithGPUandMonitopr.print()}`)
-console.log(`I am ${MacwithGPUandMonitopr.model} and ${MacwithGPUandMonitopr.render3D()}`)
-console.log(`I am ${MacwithGPUandMonitopr.model} and ${MacwithGPUandMonitopr.display()}`)
+console.log(`I am ${MacwithGPU.getModel()} and ${MacwithGPU.print()}`)
+console.log(`I am ${MacwithGPU.getModel()} and ${MacwithGPU.render3D()}`)
+console.log(`I am ${MacwithGPU.getModel()} and ${MacwithGPU.display()}`)
+console.log(`I am ${LinuxwithPrinter.getModel()} and ${LinuxwithPrinter.print()}`)
+console.log(`I am ${LinuxwithPrinter.getModel()} and ${LinuxwithPrinter.render3D()}`)
+console.log(`I am ${LinuxwithPrinter.getModel()} and ${LinuxwithPrinter.display()}`)
+console.log(`I am ${MacwithGPUandMonitopr.getModel()} and ${MacwithGPUandMonitopr.print()}`)
+console.log(`I am ${MacwithGPUandMonitopr.getModel()} and ${MacwithGPUandMonitopr.render3D()}`)
+console.log(`I am ${MacwithGPUandMonitopr.getModel()} and ${MacwithGPUandMonitopr.display()}`)
+runComputer(MacwithGPU)
 }
     
