@@ -6,21 +6,24 @@ import decoratorComputer from "./03-Decorator-Pattern/decoratorComputer";
 import decoratorPizza from "./03-Decorator-Pattern/decoratorPizza";
 import SimpleFactoryMethod from "./04-Factory-Method-Pattern/SimpleFactoryMethod";
 import animalPark from "./04-Factory-Method-Pattern/animalPark";
+import AbstractFactory from "./05-Abstrac-Factory-Pattern/AbstractFactory";
 
 
-console.log("=============Design-Pattern========\n")
+console.log("\n=============Design-Pattern========\n")
 strategyPattern();
-console.log("=============Observer-Pattern-Example 1========\n")
+console.log("\n=============Observer-Pattern-Example 1========\n")
 observer();
-console.log("=============Observer-Pattern-Example 2========\n")
+console.log("\n=============Observer-Pattern-Example 2========\n")
 socialMedia();
-console.log("=============Decorator-Pattern========\n")
+console.log("\n=============Decorator-Pattern========\n")
 decoratorPattern();
-console.log("=============Decorator-Pattern Example 1========\n")
+console.log("\n=============Decorator-Pattern Example 1========\n")
 decoratorComputer();
-console.log("=============Decorator-Pattern Example 2========\n")
+console.log("\n=============Decorator-Pattern Example 2========\n")
 decoratorPizza();
-console.log("=============Factory-Method-Pattern========\n")
+console.log("\n=============Factory-Method-Pattern========\n")
 SimpleFactoryMethod();
-console.log("=============Factory-Method-Pattern Example 1========\n")
+console.log("\n=============Factory-Method-Pattern Example 1========\n")
 animalPark();
+console.log("\n=============Abstract-Factory-Method-Pattern========\n")
+AbstractFactory();
