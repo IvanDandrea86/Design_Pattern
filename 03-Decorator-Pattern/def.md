@@ -20,3 +20,4 @@ This allows working with different Decorator objects to extend the functionality
 See also the UML class and sequence diagram below. 
 
 ![UML](https://upload.wikimedia.org/wikipedia/commons/8/83/W3sDesign_Decorator_Design_Pattern_UML.jpg)
+[back](../README.md)

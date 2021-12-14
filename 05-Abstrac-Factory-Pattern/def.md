@@ -9,3 +9,4 @@ A factory is the location of a concrete class in the code at which objects are c
 Use of this pattern makes it possible to interchange concrete implementations without changing the code that uses them, even at runtime. However, employment of this pattern, as with similar design patterns, may result in unnecessary complexity and extra work in the initial writing of code. Additionally, higher levels of separation and abstraction can result in systems that are more difficult to debug and maintain.
 
 ![UML](https://upload.wikimedia.org/wikipedia/commons/9/9d/Abstract_factory_UML.svg)
+[back](../README.md)

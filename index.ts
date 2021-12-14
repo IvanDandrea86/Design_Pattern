@@ -1,7 +1,7 @@
 import observer from "./02-Observer-Pattern/observer";
 import strategyPattern from "./01-Strategy-Patterns/strategyPattern";
 import socialMedia from "./02-Observer-Pattern/socialMedia";
-import decoratorPattern from "./03-Decorator-Pattern/decoratorPattern"
+import decoratorPattern from "./03-Decorator-Pattern/decoratorPattern";
 import decoratorComputer from "./03-Decorator-Pattern/decoratorComputer";
 import decoratorPizza from "./03-Decorator-Pattern/decoratorPizza";
 import SimpleFactoryMethod from "./04-Factory-Method-Pattern/SimpleFactoryMethod";
@@ -10,29 +10,33 @@ import AbstractFactory from "./05-Abstrac-Factory-Pattern/AbstractFactory";
 import FornitureFactory from "./05-Abstrac-Factory-Pattern/FornitureFactory";
 import Singleton from "./06-Singleton-Pattern/Singleton";
 import Command from "./07-Command-Pattern/Command";
+import Adapter from "./08-Adapter-Pattern/Adapter";
 
-
-console.log("\n=============Design-Pattern========\n")
+console.log("\n=============Design-Pattern========\n");
 strategyPattern();
-console.log("\n=============Observer-Pattern-Example 1========\n")
+console.log("\n=============Observer-Pattern-Example 1========\n");
 observer();
-console.log("\n=============Observer-Pattern-Example 2========\n")
+console.log("\n=============Observer-Pattern-Example 2========\n");
 socialMedia();
-console.log("\n=============Decorator-Pattern========\n")
+console.log("\n=============Decorator-Pattern========\n");
 decoratorPattern();
-console.log("\n=============Decorator-Pattern Example 1========\n")
+console.log("\n=============Decorator-Pattern Example 1========\n");
 decoratorComputer();
-console.log("\n=============Decorator-Pattern Example 2========\n")
+console.log("\n=============Decorator-Pattern Example 2========\n");
 decoratorPizza();
-console.log("\n=============Factory-Method-Pattern========\n")
+console.log("\n=============Factory-Method-Pattern========\n");
 SimpleFactoryMethod();
-console.log("\n=============Factory-Method-Pattern Example 1========\n")
+console.log("\n=============Factory-Method-Pattern Example 1========\n");
 animalPark();
-console.log("\n=============Abstract-Factory-Method-Pattern========\n")
+console.log("\n=============Abstract-Factory-Method-Pattern========\n");
 AbstractFactory();
-console.log("\n=============Abstract-Factory-Method-Pattern Example 1========\n")
+console.log(
+  "\n=============Abstract-Factory-Method-Pattern Example 1========\n"
+);
 FornitureFactory();
-console.log("\n=============Singleton-Pattern========\n")
+console.log("\n=============Singleton-Pattern========\n");
 Singleton();
-console.log("\n=============Commands-Pattern========\n")
+console.log("\n=============Commands-Pattern========\n");
 Command();
+console.log("\n=============Adapter-Pattern========\n");
+Adapter();
